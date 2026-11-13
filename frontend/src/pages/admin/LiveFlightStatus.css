@@ -1,0 +1,385 @@
+.live-flight-page {
+  min-height: 100vh;
+  padding: 32px;
+  background: #f7f9fc;
+  color: #17233f;
+}
+
+.live-flight-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.live-flight-label {
+  color: #b58a45;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.live-flight-header h1 {
+  color: #142344;
+  font-size: 30px;
+  margin: 8px 0;
+  font-weight: 750;
+}
+
+.live-flight-header p {
+  color: #8993a5;
+  font-size: 14px;
+  margin: 0;
+}
+
+.live-refresh-btn {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 18px;
+  background: white;
+  border: 1px solid #e4e9f1;
+  border-radius: 9px;
+  color: #243653;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.live-refresh-btn:hover {
+  background: #f0f4fa;
+}
+
+.live-refresh-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Live Banner */
+
+.live-source-banner {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 16px 20px;
+  background: white;
+  border: 1px solid #edf0f5;
+  border-radius: 11px;
+  margin-bottom: 23px;
+}
+
+.live-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #168354;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.live-indicator span {
+  width: 8px;
+  height: 8px;
+  background: #19a66c;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #e5f7ee;
+}
+
+.live-source-info,
+.live-last-updated {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #718097;
+  font-size: 12px;
+}
+
+.live-source-info svg {
+  color: #b58a45;
+}
+
+.live-last-updated {
+  margin-left: auto;
+}
+
+/* Statistics */
+
+.live-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.live-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 21px;
+  background: white;
+  border: 1px solid #edf0f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(20, 35, 68, 0.035);
+}
+
+.live-stat-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+}
+
+.live-stat-icon.blue {
+  color: #315db5;
+  background: #eef3ff;
+}
+
+.live-stat-icon.green {
+  color: #168354;
+  background: #eaf8f1;
+}
+
+.live-stat-icon.orange {
+  color: #bd8730;
+  background: #fff6e6;
+}
+
+.live-stat-card span {
+  color: #8993a5;
+  font-size: 12px;
+}
+
+.live-stat-card h2 {
+  color: #172b50;
+  font-size: 25px;
+  margin: 4px 0 0;
+}
+
+.live-stat-card .provider-name {
+  font-size: 19px;
+}
+
+/* Aircraft Table */
+
+.live-aircraft-card {
+  background: white;
+  border: 1px solid #edf0f5;
+  border-radius: 13px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(20, 35, 68, 0.035);
+}
+
+.live-aircraft-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 25px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.live-aircraft-heading h3 {
+  font-size: 17px;
+  color: #172b50;
+  margin: 0 0 6px;
+}
+
+.live-aircraft-heading p {
+  color: #8993a5;
+  font-size: 13px;
+  margin: 0;
+}
+
+.live-aircraft-count {
+  padding: 7px 12px;
+  color: #315db5;
+  background: #eef3ff;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.live-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.live-aircraft-table {
+  width: 100%;
+  min-width: 1050px;
+  border-collapse: collapse;
+}
+
+.live-aircraft-table th {
+  padding: 15px 18px;
+  text-align: left;
+  color: #8b96a9;
+  background: #fbfcfe;
+  font-size: 10px;
+  letter-spacing: 0.8px;
+  white-space: nowrap;
+}
+
+.live-aircraft-table td {
+  padding: 17px 18px;
+  border-top: 1px solid #f0f2f6;
+  color: #52627b;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.live-callsign {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.live-plane-icon {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  background: #eef3ff;
+  color: #315db5;
+  border-radius: 9px;
+}
+
+.live-callsign strong {
+  color: #253653;
+  font-size: 12px;
+}
+
+.live-icao {
+  color: #8993a5 !important;
+  font-family: monospace;
+}
+
+.live-data-cell,
+.live-location {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.live-data-cell svg,
+.live-location svg {
+  color: #9ba6b8;
+  flex-shrink: 0;
+}
+
+.live-air-status,
+.live-ground-status {
+  display: inline-flex;
+  padding: 7px 10px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.live-air-status {
+  color: #168354;
+  background: #eaf8f1;
+}
+
+.live-ground-status {
+  color: #bd8730;
+  background: #fff6e6;
+}
+
+/* Loading */
+
+.live-loading,
+.live-empty {
+  padding: 65px 20px;
+  text-align: center;
+  color: #8993a5;
+}
+
+.live-spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #e7ecf5;
+  border-top-color: #315db5;
+  border-radius: 50%;
+  margin: 0 auto 14px;
+  animation: live-spin 0.8s linear infinite;
+}
+
+.live-empty svg {
+  color: #9ba6b8;
+  margin-bottom: 10px;
+}
+
+.live-empty h3 {
+  color: #263653;
+  margin: 0 0 7px;
+}
+
+.live-empty p {
+  font-size: 13px;
+}
+
+.live-error-message {
+  padding: 13px 16px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #c33f4a;
+  background: #fff0f1;
+}
+
+.live-disclaimer {
+  color: #929cad;
+  font-size: 11px;
+  margin-top: 15px;
+}
+
+@keyframes live-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .live-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .live-flight-page {
+    padding: 20px 14px;
+  }
+
+  .live-flight-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .live-flight-header h1 {
+    font-size: 25px;
+  }
+
+  .live-source-banner {
+    gap: 15px;
+  }
+
+  .live-last-updated {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .live-aircraft-heading {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .live-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,442 @@
+.flight-details-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  color: #172b48;
+}
+
+.details-navbar {
+  height: 75px;
+  background: #fff;
+  padding: 0 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e9edf3;
+}
+
+.details-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 23px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.details-brand svg {
+  color: #d9a441;
+}
+
+.details-brand span span {
+  color: #d9a441;
+}
+
+.details-back-btn,
+.details-back-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #536176;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.details-container {
+  max-width: 1050px;
+  margin: auto;
+  padding: 40px 25px 75px;
+}
+
+.details-back-link {
+  margin-bottom: 35px;
+  font-size: 13px;
+}
+
+.details-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.details-eyebrow {
+  color: #c49335;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.details-heading h1 {
+  font-size: 31px;
+  margin: 9px 0;
+}
+
+.details-heading p {
+  color: #8994a5;
+  font-size: 13px;
+}
+
+.details-status {
+  padding: 9px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.details-status.on_time {
+  background: #e7f7ed;
+  color: #16845a;
+}
+
+.details-status.delayed {
+  background: #fff4dc;
+  color: #b97818;
+}
+
+.details-status.cancelled {
+  background: #fdecec;
+  color: #c23c3c;
+}
+
+.details-flight-card,
+.details-passenger-card {
+  background: #fff;
+  border: 1px solid #e8edf3;
+  border-radius: 14px;
+  padding: 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(20, 43, 72, 0.035);
+}
+
+.details-airline {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.details-airline-icon {
+  width: 48px;
+  height: 48px;
+  background: #eff4fa;
+  color: #173b65;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+}
+
+.details-airline h3 {
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+
+.details-airline p {
+  color: #8994a5;
+  font-size: 12px;
+  margin: 0;
+}
+
+.details-route {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr;
+  align-items: center;
+  padding: 35px 5px;
+}
+
+.details-route span {
+  color: #8994a5;
+  font-size: 10px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.details-route h2 {
+  font-size: 30px;
+  margin: 10px 0 5px;
+}
+
+.details-route h4 {
+  font-size: 14px;
+  margin: 0 0 8px;
+}
+
+.details-route p {
+  color: #8994a5;
+  font-size: 12px;
+}
+
+.details-arrival {
+  text-align: right;
+}
+
+.details-route-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  color: #d5a13e;
+}
+
+.details-route-line div {
+  width: 20%;
+  height: 1px;
+  background: #d5a13e;
+}
+
+.details-route-line small {
+  width: 100%;
+  text-align: center;
+  color: #8994a5;
+  font-size: 10px;
+}
+
+.details-flight-meta {
+  display: flex;
+  gap: 30px;
+  border-top: 1px solid #edf0f5;
+  padding-top: 20px;
+  color: #738197;
+  font-size: 12px;
+}
+
+.details-flight-meta div {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.details-flight-meta svg {
+  color: #d5a13e;
+}
+
+.details-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #d5a13e;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.details-section-title h2 {
+  color: #172b48;
+  font-size: 21px;
+  margin: 8px 0;
+}
+
+.details-section-title p {
+  color: #8994a5;
+  font-size: 12px;
+}
+
+.passenger-selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.passenger-selector h3 {
+  font-size: 14px;
+  margin: 0 0 6px;
+}
+
+.passenger-selector p {
+  color: #8994a5;
+  font-size: 12px;
+  margin: 0;
+}
+
+.passenger-counter {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.passenger-counter button {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #dfe5ed;
+  background: #fff;
+  color: #172b48;
+  border-radius: 7px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.passenger-counter button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.passenger-counter strong {
+  font-size: 16px;
+}
+
+.details-price-summary {
+  background: #f7f9fc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.details-price-summary > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.details-price-summary span {
+  color: #8290a3;
+}
+
+.details-price-summary strong {
+  color: #172b48;
+}
+
+.details-price-summary .details-total {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 17px;
+  margin: 0;
+  align-items: center;
+}
+
+.details-total h2 {
+  margin: 0;
+  color: #c49335;
+  font-size: 25px;
+}
+
+.details-secure-note {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #16845a;
+  font-size: 12px;
+  margin: 22px 0;
+}
+
+.details-warning {
+  background: #fff0ed;
+  color: #bb3838;
+  padding: 12px;
+  border-radius: 7px;
+  font-size: 12px;
+}
+
+.continue-booking-btn {
+  width: 100%;
+  background: #d9a441;
+  color: #142b48;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.continue-booking-btn:hover {
+  background: #e8b653;
+}
+
+.continue-booking-btn:disabled {
+  background: #c9ced6;
+  cursor: not-allowed;
+}
+
+.details-footer {
+  background: #10294b;
+  color: #b9c7d9;
+  text-align: center;
+  padding: 25px;
+  font-size: 12px;
+}
+
+.flight-details-message {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #142b48;
+  text-align: center;
+  gap: 12px;
+}
+
+.flight-details-message button {
+  background: #142b48;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.details-spinner {
+  width: 35px;
+  height: 35px;
+  border: 3px solid #e9edf3;
+  border-top-color: #d9a441;
+  border-radius: 50%;
+  animation: detailsSpin 0.8s linear infinite;
+}
+
+@keyframes detailsSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 650px) {
+  .details-container {
+    padding: 25px 15px 50px;
+  }
+
+  .details-heading h1 {
+    font-size: 25px;
+  }
+
+  .details-flight-card,
+  .details-passenger-card {
+    padding: 20px 15px;
+  }
+
+  .details-route {
+    grid-template-columns: 1fr 0.6fr 1fr;
+    gap: 8px;
+  }
+
+  .details-route h2 {
+    font-size: 22px;
+  }
+
+  .details-route h4 {
+    font-size: 11px;
+  }
+
+  .details-route p {
+    font-size: 10px;
+  }
+
+  .details-route-line {
+    gap: 3px;
+  }
+
+  .details-route-line div {
+    width: 10%;
+  }
+
+  .details-flight-meta {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

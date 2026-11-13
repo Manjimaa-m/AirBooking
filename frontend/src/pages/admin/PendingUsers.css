@@ -1,0 +1,369 @@
+.pending-users-page {
+  padding: 32px;
+  color: #17233f;
+  min-height: 100vh;
+  background: #f7f9fc;
+}
+
+.pending-users-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.admin-page-label {
+  color: #b58a45;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.pending-users-header h1 {
+  font-size: 30px;
+  margin: 8px 0;
+  font-weight: 750;
+  color: #142344;
+}
+
+.pending-users-header p,
+.pending-table-heading p {
+  color: #8993a5;
+  font-size: 14px;
+  margin: 0;
+}
+
+.pending-refresh-btn {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 18px;
+  background: white;
+  border: 1px solid #e4e9f1;
+  border-radius: 9px;
+  color: #243653;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pending-refresh-btn:hover {
+  background: #f0f4fa;
+}
+
+.pending-refresh-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.refresh-spinning {
+  animation: pending-spin 1s linear infinite;
+}
+
+.pending-summary-card {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  background: white;
+  border: 1px solid #edf0f5;
+  border-radius: 13px;
+  padding: 23px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 18px rgba(20, 35, 68, 0.035);
+}
+
+.pending-summary-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #eef3ff;
+  color: #315db5;
+}
+
+.pending-summary-card span {
+  font-size: 13px;
+  color: #8490a3;
+}
+
+.pending-summary-card h2 {
+  font-size: 27px;
+  color: #172b50;
+  margin: 3px 0 0;
+}
+
+.pending-summary-status {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #bd8730;
+  background: #fff8e9;
+  padding: 9px 13px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.pending-status-dot,
+.pending-badge span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #e8a63e;
+}
+
+.pending-table-card {
+  background: white;
+  border: 1px solid #edf0f5;
+  border-radius: 13px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(20, 35, 68, 0.035);
+}
+
+.pending-table-heading {
+  padding: 22px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.pending-table-heading h3 {
+  font-size: 17px;
+  margin: 0 0 6px;
+  color: #172b50;
+}
+
+.pending-count {
+  background: #eef3ff;
+  color: #315db5;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.pending-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.pending-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 760px;
+}
+
+.pending-table th {
+  padding: 15px 22px;
+  text-align: left;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #8b96a9;
+  background: #fbfcfe;
+}
+
+.pending-table td {
+  padding: 17px 22px;
+  border-top: 1px solid #f0f2f6;
+  font-size: 13px;
+}
+
+.pending-user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pending-avatar {
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #edf2ff;
+  color: #315db5;
+  font-size: 15px;
+  font-weight: 750;
+}
+
+.pending-user-info strong {
+  display: block;
+  color: #253653;
+  font-size: 13px;
+}
+
+.pending-user-info span {
+  display: block;
+  margin-top: 4px;
+  color: #9aa4b4;
+  font-size: 11px;
+}
+
+.pending-email {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #68768b;
+}
+
+.pending-email svg {
+  color: #9ba6b8;
+}
+
+.pending-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 10px;
+  background: #fff8e9;
+  color: #bd8730;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.pending-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pending-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 11px;
+  border-radius: 7px;
+  font-size: 11px;
+  font-weight: 650;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pending-actions button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pending-approve-btn {
+  color: #168354;
+  background: #eaf8f1;
+  border: 1px solid #d7f0e3;
+}
+
+.pending-approve-btn:hover:not(:disabled) {
+  background: #d9f2e5;
+}
+
+.pending-reject-btn {
+  color: #d14b55;
+  background: #fff0f1;
+  border: 1px solid #f8dfe1;
+}
+
+.pending-reject-btn:hover:not(:disabled) {
+  background: #ffe1e3;
+}
+
+.pending-loading,
+.pending-empty {
+  padding: 65px 20px;
+  text-align: center;
+  color: #8b96a9;
+}
+
+.pending-spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #e7ecf5;
+  border-top-color: #315db5;
+  border-radius: 50%;
+  margin: 0 auto 14px;
+  animation: pending-spin 0.8s linear infinite;
+}
+
+.pending-empty-icon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  background: #eaf8f1;
+  color: #168354;
+}
+
+.pending-empty h3 {
+  color: #263653;
+  margin-bottom: 7px;
+}
+
+.pending-empty p {
+  font-size: 13px;
+}
+
+.pending-success-message,
+.pending-error-message {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 16px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.pending-success-message {
+  color: #168354;
+  background: #eaf8f1;
+}
+
+.pending-error-message {
+  color: #c33f4a;
+  background: #fff0f1;
+}
+
+@keyframes pending-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .pending-users-page {
+    padding: 20px 14px;
+  }
+
+  .pending-users-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .pending-users-header h1 {
+    font-size: 25px;
+  }
+
+  .pending-summary-card {
+    padding: 17px;
+  }
+
+  .pending-summary-status {
+    font-size: 10px;
+    padding: 7px 9px;
+  }
+
+  .pending-table-heading {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  .pending-summary-status {
+    display: none;
+  }
+}
