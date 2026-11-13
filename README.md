@@ -188,3 +188,13 @@ Live aircraft information is retrieved from the OpenSky Network API.
 ## Developer
 
 Developed as a Full Stack Engineer take-home assignment for YUAI Soft Solutions Pvt. Ltd.
+
+## Project Demo Video
+
+Watch the complete AirBooking project demonstration:
+
+[▶ Watch AirBooking Project Demo](https://drive.google.com/file/d/1-f7ctWEI0CU-zXZu1z8jbXZOy6afTYEO/view?usp=sharing)
+
+## Project Screenshots
+
+The screenshots folder contains the application's user interface and feature demonstrations.
